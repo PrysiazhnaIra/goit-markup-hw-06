@@ -438,8 +438,10 @@ img {
 
 .footer {
   background-color: #2e2f42;
-  padding-top: 100px;
-  padding-bottom: 100px;
+  /* padding-top: 100px;
+  padding-bottom: 100px; */
+  padding-top: 96px;
+  padding-bottom: 96px;
 }
 
 .footer-link-logo {
@@ -451,7 +453,9 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   margin-bottom: 16px;
-  display: inline-block;
+  /* display: inline-block; */
+  display: flex;
+  justify-content: center;
 }
 
 .footer-link-logo-part {
@@ -462,7 +466,8 @@ img {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  max-width: 264px;
+  /* max-width: 264px; */
+  width: 288px;
 }
 
 .footer-subtitle {
@@ -477,7 +482,9 @@ img {
 
 .footer-container {
   display: flex;
-  align-items: baseline;
+  flex-wrap: wrap;
+  row-gap: 72px;
+  /* align-items: baseline; */
 }
 
 .footer-base {
@@ -485,13 +492,16 @@ img {
 }
 
 .footer-soc-link {
-  text-align: left;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* text-align: left; */
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-soc-icon {
   margin-left: 0;
-  margin-top: 16px;
+  /* margin-top: 16px; */
   margin-right: 0px;
   gap: 16px;
 }
@@ -511,11 +521,16 @@ img {
 /* form-footer */
 
 .footer-form {
-  margin-left: 80px;
+  /* margin-left: 80px; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .footer-form-form {
   display: flex;
+  flex-direction: column;
+  align-items: center;
   gap: 24px;
 }
 
@@ -532,7 +547,8 @@ img {
 }
 
 .footer-input {
-  width: 264px;
+  /* width: 264px; */
+  width: 288px;
   height: 40px;
   border-radius: 4px;
   border: 1px solid #fff;
@@ -915,6 +931,29 @@ img {
   .portfolio-list-item {
     width: calc((100% - 24px) / 2);
   }
+
+  /* footer */
+  .footer-base {
+    margin-left: 108px;
+    margin-right: 24px;
+  }
+
+  .footer-link-logo {
+    display: inline-block;
+  }
+
+  .footer-soc-link {
+    display: inline-block;
+  }
+
+  .footer-form {
+    display: inline-block;
+    margin-left: 108px;
+  }
+
+  .footer-form-form {
+    flex-direction: row;
+  }
 }
 
 @media screen and (min-width: 1158px) {
@@ -931,7 +970,7 @@ img {
 
   .address-list {
     flex-direction: row;
-    row-gap: 40px;
+    column-gap: 40px;
   }
 
   .address-list-link {
