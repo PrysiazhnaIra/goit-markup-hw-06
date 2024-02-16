@@ -126,17 +126,30 @@ img {
 
 .solutions {
   margin: 0 auto;
-  padding: 188px 0;
+  /* padding: 188px 0; */
+  padding: 72px 0;
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/people-office.jpeg);
+    url(../images/people-office-mob.jpeg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   max-width: 1440px;
   width: 100%;
+}
+
+@media screen and (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .solutions {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/people-office-mob-2x.jpeg);
+  }
 }
 
 .solutions-container {
@@ -148,11 +161,14 @@ img {
 .solutions-title {
   color: #fff;
   text-align: center;
-  font-size: 56px;
+  /* font-size: 56px; */
+  font-size: 36px;
   font-weight: 700;
-  line-height: 1.07;
+  /* line-height: 1.07; */
+  line-height: 1.11;
   letter-spacing: 0.02em;
-  max-width: 496px;
+  /* max-width: 496px; */
+  max-width: 216px;
 }
 
 .solutions-btn {
@@ -167,7 +183,8 @@ img {
   border: none;
   border-radius: 4px;
   padding: 16px 32px;
-  margin-top: 48px;
+  /* margin-top: 48px; */
+  margin-top: 72px;
   min-width: 169px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -895,6 +912,42 @@ img {
     color: #404bbf;
   }
 
+  /* solutions */
+
+  .solutions {
+    padding: 112px 0;
+  }
+
+  .solutions-title {
+    font-size: 56px;
+    line-height: 1.07;
+    max-width: 496px;
+  }
+
+  .solutions-btn {
+    margin-top: 36px;
+  }
+
+  .solutions {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/people-office-tab.jpeg);
+  }
+
+  @media screen and (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .solutions {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/people-office-tab-2x.jpeg);
+    }
+  }
+
   /* advantages */
 
   .advantages-list {
@@ -976,6 +1029,36 @@ img {
   .address-list-link {
     font-size: 16px;
     line-height: 1.5;
+  }
+
+  /* solutions */
+
+  .solutions {
+    padding: 188px 0;
+  }
+
+  .solutions-btn {
+    margin-top: 48px;
+  }
+
+  .solutions {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/people-office.jpeg);
+  }
+
+  @media screen and (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .solutions {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/people-office-2x.jpg);
+    }
   }
 
   /* advantages */
