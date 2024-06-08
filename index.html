@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WebStudio</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/izitoast/dist/css/iziToast.min.css">
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
@@ -29,10 +30,10 @@
               <a class="header-link current" href="./index.html">Studio</a>
             </li>
             <li class="header-list-item">
-              <a class="header-link" href="">Portfolio</a>
+              <a class="header-link" href="#portfolio">Portfolio</a>
             </li>
             <li class="header-list-item">
-              <a class="header-link" href="">Contacts</a>
+              <a class="header-link" href="#contacts">Contacts</a>
             </li>
           </ul>
         </nav>
@@ -57,7 +58,6 @@
         </button>
       </div>
       <!-- mob menu -->
-      <!-- is-open - should be in class for mob menu-->
       <div class="mob-menu">
         <div>
           <button type="button" class="mob-menu-close-btn">
@@ -72,10 +72,10 @@
               >
             </li>
             <li class="mob-menu-list-item">
-              <a class="mob-menu-link" href="">Portfolio</a>
+              <a class="mob-menu-link" href="#portfolio">Portfolio</a>
             </li>
             <li class="mob-menu-list-item">
-              <a class="mob-menu-link" href="">Contacts</a>
+              <a class="mob-menu-link" href="#contacts">Contacts</a>
             </li>
           </ul>
         </div>
@@ -379,7 +379,7 @@
         </div>
       </section>
       <!-- portfolio -->
-      <section class="portfolio">
+      <section class="portfolio" id="portfolio">
         <div class="container">
           <h2 class="portfolio-title">Our Portfolio</h2>
           <ul class="portfolio-list">
@@ -631,7 +631,7 @@
       </section>
     </main>
     <!-- footer -->
-    <footer class="footer">
+    <footer class="footer" id="contacts">
       <div class="container footer-container">
         <div class="footer-base">
           <a class="footer-link-logo" href="/"
@@ -699,7 +699,6 @@
       </div>
     </footer>
 
-    <!-- is-open - should be in class for mod-->
     <div class="backdrop">
       <div class="modal">
         <button type="button" class="modal-close-btn">
@@ -733,7 +732,7 @@
                 id="user-phone"
               />
               <svg class="modal-icon" width="18" height="24">
-                <use href="./images/icons.svg#icon-email-black"></use>
+                <use href="./images/icons.svg#icon-phone-black"></use>
               </svg>
             </div>
           </div>
@@ -747,7 +746,7 @@
                 id="user-email"
               />
               <svg class="modal-icon" width="18" height="24">
-                <use href="./images/icons.svg#icon-phone-black"></use>
+                <use href="./images/icons.svg#icon-email-black"></use>
               </svg>
             </div>
           </div>
@@ -781,5 +780,9 @@
         </form>
       </div>
     </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/izitoast/dist/js/iziToast.min.js"></script>
+    <script type="module" src="./main.js"></script>
+  
   </body>
 </html>

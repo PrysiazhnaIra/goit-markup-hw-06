@@ -124,6 +124,7 @@ img {
 
 /* mob menu */
 .mob-menu {
+  z-index: 1;
   width: 100vw;
   height: 100vh;
   position: fixed;
@@ -309,6 +310,12 @@ img {
 .advantages-icon-item {
   margin-top: 24px;
   margin-bottom: 24px;
+  transition: transform 0.3s ease;
+}
+
+.advantages-icon-item:hover,
+.advantages-icon-item:focus {
+  transform: scale(1.5);
 }
 
 .advantages-list {
