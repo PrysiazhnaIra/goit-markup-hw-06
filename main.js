@@ -65,7 +65,7 @@ sendEmail.addEventListener("click", (event) => {
         iziToast.success({
             title: 'Success!',
             position: 'center',
-            message: 'Thank you! We will call you back within 15min.',
+            message: 'Thank you!',
         }); 
         footerInput.value = "";
     } else {
